@@ -351,7 +351,7 @@ static struct OracleFdwState *deserializePlanData(List *list);
 static char *deserializeString(Const *constant);
 static long deserializeLong(Const *constant);
 static bool optionIsTrue(const char *value);
-static Expr *find_em_expr_for_rel(EquivalenceClass *ec, RelOptInfo *rel);
+extern Expr *find_em_expr_for_rel(EquivalenceClass *ec, RelOptInfo *rel);
 static char *deparseDate(Datum datum);
 static char *deparseTimestamp(Datum datum, bool hasTimezone);
 static char *deparseInterval(Datum datum);
